@@ -16,11 +16,11 @@ class CellButton extends StatelessWidget {
         foregroundColor: const MaterialStatePropertyAll(
           Colors.black,
         ),
-        padding: const MaterialStatePropertyAll(
-          EdgeInsets.all(0),
-        ),
         overlayColor: MaterialStatePropertyAll(
           Colors.grey.shade200,
+        ),
+        padding: const MaterialStatePropertyAll(
+          EdgeInsets.all(0),
         ),
         shape: const MaterialStatePropertyAll(
           RoundedRectangleBorder(

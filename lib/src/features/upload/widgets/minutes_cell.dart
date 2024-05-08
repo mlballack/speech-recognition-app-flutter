@@ -158,20 +158,21 @@ class MinutesCell extends StatelessWidget {
             ],
           ),
           const Spacer(),
-          if (_progress == 0 || _progress == 4)
+          if (_progress == 0 || _progress == 3 || _progress == 4)
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Row(
                   children: [
-                    MyIconButton(
-                      onPressed: onReload,
-                      icon: Icon(
-                        Icons.replay_outlined,
-                        color: Colors.grey.shade400,
+                    if (_progress != 3)
+                      MyIconButton(
+                        onPressed: onReload,
+                        icon: Icon(
+                          Icons.replay_outlined,
+                          color: Colors.grey.shade400,
+                        ),
                       ),
-                    ),
                     const SizedBox(
                       width: 2,
                     ),

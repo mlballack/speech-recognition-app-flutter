@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -13,10 +14,12 @@ class AppkeyTextfield extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final isObscure = useState(true);
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
       width: MediaQuery.of(context).size.width,
       child: TextField(
+        obscureText: isObscure.value,
         decoration: InputDecoration(
           isDense: true,
           contentPadding:
@@ -41,6 +44,15 @@ class AppkeyTextfield extends HookConsumerWidget {
             // 角丸
             borderRadius: BorderRadius.all(Radius.circular(10)),
             borderSide: BorderSide(color: Colors.transparent, width: 0),
+          ),
+          suffixIcon: IconButton(
+            iconSize: 14,
+            onPressed: () {
+              isObscure.value = !isObscure.value;
+            },
+            icon: Icon(isObscure.value
+                ? CupertinoIcons.eye_slash
+                : CupertinoIcons.eye),
           ),
         ),
         style: const TextStyle(
