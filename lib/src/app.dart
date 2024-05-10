@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:utterance_search_app/src/routing/router.dart';
+import 'package:speech_recognition_flutter_app/src/routing/router.dart';
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});

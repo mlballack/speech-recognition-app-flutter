@@ -1,4 +1,4 @@
-import 'package:utterance_search_app/src/models/async_recognition.model.dart';
+import 'package:speech_recognition_flutter_app/src/models/async_recognition.model.dart';
 
 class Minutes {
   final String audioPath;

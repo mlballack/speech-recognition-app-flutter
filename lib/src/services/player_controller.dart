@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:utterance_search_app/src/services/player_state.dart';
+import 'package:speech_recognition_flutter_app/src/services/player_state.dart';
 
 final myPlayerControllerProvider =
     AsyncNotifierProvider.autoDispose<MyPlayerController, MyPlayerState>(

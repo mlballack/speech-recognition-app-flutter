@@ -75,14 +75,13 @@ class Token {
   final String spoken;
   final String label;
 
-  const Token({
-    required this.written,
-    this.confidence,
-    this.startTime,
-    this.endTime,
-    required this.spoken,
-    required this.label,
-  });
+  const Token(
+      {required this.written,
+      this.confidence,
+      this.startTime,
+      this.endTime,
+      required this.spoken,
+      required this.label});
 
   factory Token.fromJson(dynamic json) {
     double toConfidence(dynamic data) {
@@ -95,13 +94,12 @@ class Token {
     }
 
     return Token(
-      written: json["written"] ?? "",
-      confidence: toConfidence(json["confidence"]),
-      startTime: json["starttime"],
-      endTime: json["endtime"],
-      spoken: json["spoken"] ?? "",
-      label: json["label"] ?? "",
-    );
+        written: json["written"] ?? "",
+        confidence: toConfidence(json["confidence"]),
+        startTime: json["starttime"],
+        endTime: json["endtime"],
+        spoken: json["spoken"] ?? "",
+        label: json["label"] ?? "");
   }
 
   Map<String, dynamic> toJson() {
@@ -111,7 +109,7 @@ class Token {
       "starttime": startTime,
       "endtime": endTime,
       "spoken": spoken,
-      "label": label,
+      "label": label
     };
   }
 

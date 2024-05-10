@@ -8,7 +8,7 @@ import 'dart:convert';
 import 'dart:typed_data';
 import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
-import 'package:utterance_search_app/src/models/async_recognition.model.dart';
+import 'package:speech_recognition_flutter_app/src/models/async_recognition.model.dart';
 
 final recognitionRepositoryProvider =
     Provider((ref) => RecognitionRepository());

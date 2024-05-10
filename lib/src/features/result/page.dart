@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:utterance_search_app/src/features/result/widgets/player_view.dart';
-import 'package:utterance_search_app/src/features/result/widgets/result_cell.dart';
-import 'package:utterance_search_app/src/models/async_recognition.model.dart';
-import 'package:utterance_search_app/src/models/minutes.model.dart';
-import 'package:utterance_search_app/src/services/player_controller.dart';
-import 'package:utterance_search_app/src/widgets/cell_button.dart';
+import 'package:speech_recognition_flutter_app/src/features/result/widgets/player_view.dart';
+import 'package:speech_recognition_flutter_app/src/features/result/widgets/result_cell.dart';
+import 'package:speech_recognition_flutter_app/src/models/async_recognition.model.dart';
+import 'package:speech_recognition_flutter_app/src/models/minutes.model.dart';
+import 'package:speech_recognition_flutter_app/src/services/player_controller.dart';
+import 'package:speech_recognition_flutter_app/src/widgets/cell_button.dart';
 
 class ResultPage extends HookConsumerWidget {
   static ResultPage builder(BuildContext context, GoRouterState state) {

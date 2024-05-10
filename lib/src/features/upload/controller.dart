@@ -4,9 +4,9 @@ import 'dart:io';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/services.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:utterance_search_app/src/models/async_recognition.model.dart';
-import 'package:utterance_search_app/src/models/minutes.model.dart';
-import 'package:utterance_search_app/src/repositories/recognition_repository.dart';
+import 'package:speech_recognition_flutter_app/src/models/async_recognition.model.dart';
+import 'package:speech_recognition_flutter_app/src/models/minutes.model.dart';
+import 'package:speech_recognition_flutter_app/src/repositories/recognition_repository.dart';
 
 final uploadControllerProvider =
     AsyncNotifierProvider<UploadController, List<Minutes>>(

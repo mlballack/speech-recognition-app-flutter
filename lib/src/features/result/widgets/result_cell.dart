@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:utterance_search_app/src/models/async_recognition.model.dart';
-import 'package:utterance_search_app/src/models/recognition.model.dart';
+import 'package:speech_recognition_flutter_app/src/models/async_recognition.model.dart';
+import 'package:speech_recognition_flutter_app/src/models/recognition.model.dart';
 
 class ResultCell extends StatelessWidget {
   final Segment segment;

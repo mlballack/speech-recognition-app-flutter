@@ -1,7 +1,7 @@
 import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:utterance_search_app/src/services/player_controller.dart';
+import 'package:speech_recognition_flutter_app/src/services/player_controller.dart';
 
 class PlayerView extends HookConsumerWidget {
   final void Function() onPlay;

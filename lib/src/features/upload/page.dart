@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:utterance_search_app/src/features/upload/controller.dart';
-import 'package:utterance_search_app/src/features/upload/widgets/appkey_textfield.dart';
-import 'package:utterance_search_app/src/features/upload/widgets/minutes_cell.dart';
-import 'package:utterance_search_app/src/models/minutes.model.dart';
-import 'package:utterance_search_app/src/repositories/recognition_repository.dart';
-import 'package:utterance_search_app/src/routing/locations.dart';
-import 'package:utterance_search_app/src/widgets/cell_button.dart';
+import 'package:speech_recognition_flutter_app/src/features/upload/controller.dart';
+import 'package:speech_recognition_flutter_app/src/features/upload/widgets/appkey_textfield.dart';
+import 'package:speech_recognition_flutter_app/src/features/upload/widgets/minutes_cell.dart';
+import 'package:speech_recognition_flutter_app/src/models/minutes.model.dart';
+import 'package:speech_recognition_flutter_app/src/repositories/recognition_repository.dart';
+import 'package:speech_recognition_flutter_app/src/routing/locations.dart';
+import 'package:speech_recognition_flutter_app/src/widgets/cell_button.dart';
 
 class UploadPage extends HookConsumerWidget {
   static UploadPage builder(BuildContext context, GoRouterState state) {

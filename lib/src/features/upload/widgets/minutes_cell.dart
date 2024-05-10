@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:utterance_search_app/src/features/upload/widgets/my_icon_button.dart';
-import 'package:utterance_search_app/src/models/minutes.model.dart';
+import 'package:speech_recognition_flutter_app/src/features/upload/widgets/my_icon_button.dart';
+import 'package:speech_recognition_flutter_app/src/models/minutes.model.dart';
 
 class MinutesCell extends StatelessWidget {
   final Minutes minutes;

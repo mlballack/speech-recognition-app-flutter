@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:utterance_search_app/src/features/result/page.dart';
-import 'package:utterance_search_app/src/features/upload/page.dart';
-import 'package:utterance_search_app/src/routing/locations.dart';
+import 'package:speech_recognition_flutter_app/src/features/result/page.dart';
+import 'package:speech_recognition_flutter_app/src/features/upload/page.dart';
+import 'package:speech_recognition_flutter_app/src/routing/locations.dart';
 
 final navigationKey = GlobalKey<NavigatorState>();
 
