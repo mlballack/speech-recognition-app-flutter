@@ -55,6 +55,7 @@ class MinutesCell extends StatelessWidget {
     switch (_progress) {
       case 0:
       case 1:
+        return Colors.grey.shade400;
       case 2:
         return Colors.grey;
       case 3:

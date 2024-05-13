@@ -110,6 +110,7 @@ class UploadController extends AsyncNotifier<List<Minutes>> {
   }
 
   Future<void> _fetch(Minutes minutes, RecognitionRepository repository) async {
+    if (minutes.status == 3 || minutes.status == 4) return;
     //print("polling[${minutes.asyncRecognition?.status}]: ${minutes.audioPath}");
     final minutesList = state.value ?? [];
     if (minutesList.isEmpty) return;
